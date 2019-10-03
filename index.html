@@ -13,13 +13,13 @@
     var luck = Math.round(Math.random() * 18);
     var nums = [num1, num2, num3, num4, num5]
     for (i = 0; i < nums.length; i++) {
-      document.write("Number " + i++ + "= " + nums[i] + "<br>"); 
+      document.write("Number " + (i+1) + "= " + nums[i] + "<br>"); 
     }
     document.write("Lucky Ball = " + luck + "<br>");
     document.write("<br>")
     nums.sort();
     for (i = 0; i < nums.length; i++) {
-      document.write("Number " + i+1 + "= " + nums[i] + "<br>"); 
+      document.write("Number " + (i+1) + "= " + nums[i] + "<br>"); 
     }
     document.write("Lucky Ball = " + luck + "<br>");    
   </script>
