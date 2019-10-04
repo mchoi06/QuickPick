@@ -5,6 +5,7 @@
 </head>
 <body>
   <script language="javascript">
+// Draw numbers
     var num1 = Math.round(Math.random() * 48);
     var num2 = Math.round(Math.random() * 48);
     var num3 = Math.round(Math.random() * 48); 
@@ -18,13 +19,11 @@
     document.write("Lucky Ball = " + luck + "<br>");
     document.write("<br>");
     nums.sort(function(a, b){return a-b});
-    document.write(nums);
- /*
+    document.write("Sorted <br>");
     for (i = 0; i < nums.length; i++) {
-      document.write("Number " + (i+1) + "= " + nums[i] + "<br>"); 
+       document.write("Number " + (i+1) + "= " + nums[i] + "<br>");
     }
-    document.write("Lucky Ball = " + luck + "<br>");    
-*/
+
   </script>
 </body>
 </html>
