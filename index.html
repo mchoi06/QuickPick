@@ -55,8 +55,9 @@
   }
 
   function Second() {
+  document.write("<br>")
   for (i = 0; i < nums.length; i++) {
-      document.write("OOF" + "Number " + (i+1) + "= " + window.InNums[i] + "<br>");
+      document.write("ACTUAL" + "Number " + (i+1) + "= " + nums[i] + "<br>");
     }}
   
   function Match() {
@@ -64,8 +65,9 @@
     for (i = 0; i < nums.length; i++) {
       for (j = 0; j < window.InNums.length; j++) {
         if (nums[i] == window.InNums[j]) {
+          document.write("match= " + "window.match" + " and num is " + nums[i]);
           window.match++;
-          document.write(window.match + "<br>")
+          document.write(window.match + "<br>");
         }
       }
     }
