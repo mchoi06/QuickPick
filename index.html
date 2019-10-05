@@ -64,7 +64,8 @@
     for (i = 0; i < nums.length; i++) {
       for (j = 0; j < window.InNums.length; j++) {
         if (nums[i] == window.InNums[j]) {
-          match++;
+          window.match++;
+          document.write(window.match + "<br>")
         }
       }
     }
