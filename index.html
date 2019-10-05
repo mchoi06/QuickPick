@@ -26,10 +26,21 @@
     }
     document.write("Lucky Ball = " + luck + "<br>");
   </script>
-<!-- //Calculator -->
+<!-- Form -->
   <form name="calc">
-    <input type="text" name="numform" id="nums">
-    <input type="submit" name="numform" id="luck">
+    <input type="text" placeholder="Input your picks" id="nums">
+    <input type="text" placeholder="Lucky ball" id="luck">
+    <input type="button" onclick="GetIn()">
   </form>
+
+<script language="javascript">
+  function GetIn(){
+            var InNums = document.getElementById("nums").value;
+            var InLuck = document.getElementById("luck").value;
+            
+            // Displaying the value
+            alert(InNums, InLuck);
+        }
+    </script>
 </body>
 </html>
