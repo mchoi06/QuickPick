@@ -30,7 +30,7 @@
   <form name="Picks">
     <input type="text" placeholder="Input your picks" id="nums">
     <input type="text" placeholder="Lucky ball" id="luck">
-    <input type="button" onclick="GetIn()">
+    <button type="button" onclick="GetIn()">Draw</button>
   </form>
 
 <script language="javascript">
@@ -39,7 +39,7 @@
             var InLuck = document.getElementById("luck").value;
             
             // Displaying the value
-            alert(InNums, InLuck);
+            alert(InNums + "<br>" + InLuck);
         }
     </script>
 </body>
