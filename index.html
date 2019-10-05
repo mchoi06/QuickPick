@@ -44,10 +44,10 @@
   function GetIn() {
     window.InNums = document.getElementById("nums").value;
     window.InLuck = document.getElementById("luck").value;
-    alert(InNums + "\n" + InLuck);
-    document.write(InNums + "<br>");
-    InNums = InNums.split(" ");
-    document.write(InNums + "<br>");
+    alert(window.InNums + "\n" + InLuck);
+    document.write(window.InNums + "<br>");
+    window.InNums = window.InNums.split(" ");
+    document.write(window.InNums + "<br>");
     for (i = 0; i < nums.length; i++) {
       document.write("Number " + (i+1) + "= " + window.InNums[i] + "<br>"); 
     }
@@ -55,7 +55,7 @@
   }
 
     for (i = 0; i < nums.length; i++) {
-      document.write("OOF" + "Number " + (i+1) + "= " + InNums + "<br>");
+      document.write("OOF" + "Number " + (i+1) + "= " + window.InNums + "<br>");
     }
 </script>  
 </body>
