@@ -18,6 +18,29 @@
   <br>
 
 <script language="javascript">
+// Draw numbers
+  var num1 = 2 //Math.round(Math.random() * 48);
+  var num2 = 18 //Math.round(Math.random() * 48);
+  var num3 = 5 //Math.round(Math.random() * 48); 
+  var num4 = 20 //Math.round(Math.random() * 48); 
+  var num5 = 32 //Math.round(Math.random() * 48);
+  var luck = 6 //Math.round(Math.random() * 18);
+  var nums = [num1, num2, num3, num4, num5];
+  for (i = 0; i < nums.length; i++) {
+    document.write("Number " + (i+1) + "= " + nums[i] + "<br>"); 
+  }
+  document.write("Lucky Ball = " + luck + "<br>");
+  document.write("<br>");
+// Sort and Display
+  nums.sort(function(a, b){return a-b});
+  document.write("Sorted <br>");
+  for (i = 0; i < nums.length; i++) {
+    document.write("Number " + (i+1) + "= " + nums[i] + "<br>");
+  }
+  document.write("Lucky Ball = " + luck + "<br><br>");
+</script>
+  
+<script language="javascript">
   function GetIn() {
     var InNums = document.getElementById("nums").value;
     var InLuck = document.getElementById("luck").value;
@@ -30,33 +53,11 @@
     }
     
   }
-  
-  
 </script>
-  
-  <script language="javascript">
-// Draw numbers
-    var num1 = 2 //Math.round(Math.random() * 48);
-    var num2 = 18 //Math.round(Math.random() * 48);
-    var num3 = 5 //Math.round(Math.random() * 48); 
-    var num4 = 20 //Math.round(Math.random() * 48); 
-    var num5 = 32 //Math.round(Math.random() * 48);
-    var luck = 6 //Math.round(Math.random() * 18);
-    var nums = [num1, num2, num3, num4, num5];
+
+<script language="javascript">
     for (i = 0; i < nums.length; i++) {
-      document.write("Number " + (i+1) + "= " + nums[i] + "<br>"); 
-    }
-    document.write("Lucky Ball = " + luck + "<br>");
-    document.write("<br>");
-// Sort and Display
-    nums.sort(function(a, b){return a-b});
-    document.write("Sorted <br>");
-    for (i = 0; i < nums.length; i++) {
-       document.write("Number " + (i+1) + "= " + nums[i] + "<br>");
-    }
-    document.write("Lucky Ball = " + luck + "<br><br>");
-  </script>
-  
-  
+      document.write("OOF" + "Number " + (i+1) + "= " + InNums[i] + "<br>");   
+</script>  
 </body>
 </html>
