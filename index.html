@@ -32,6 +32,8 @@
     <input type="text" placeholder="Lucky ball" id="luck">
     <button type="button" onclick="GetIn()">Draw</button>
   </form>
+  
+  <br>
 
 <script language="javascript">
   function GetIn(){
@@ -41,6 +43,10 @@
             // Displaying the value
             alert(InNums + "\n" + InLuck);
         }
-    </script>
+  for (i = 0; i < length.InNums; i++) {
+    document.write("Number " + (i+1) + "= " + nums[i] + "<br>");
+  }
+</script>
+  
 </body>
 </html>
