@@ -12,7 +12,7 @@
     <input type="text" placeholder="Input your picks" id="nums"> <br>
     Pick Lucky Number: <br>
     <input type="text" placeholder="Lucky ball" id="luck"> <br>
-    <button type="button" onclick="GetIn();Second();Match()">Draw</button>
+    <button type="button" onclick="GetIn();Second();Match();Calc()">Draw</button>
   </form>
   
   <br>
@@ -44,7 +44,7 @@
   function GetIn() {
     window.InNums = document.getElementById("nums").value;
     window.InLuck = document.getElementById("luck").value;
-    alert(window.InNums + "\n" + InLuck);
+    alert(window.InNums + "\n" + window.InLuck);
     document.write(window.InNums + "<br>");
     window.InNums = window.InNums.split(" ");
     document.write(window.InNums + "<br>");
@@ -73,6 +73,11 @@
       }
     }
   }
+  
+  function Calc() {
+    if ((window.match == 0) && (window.InLuck == luck) {
+        document.write("Congratulations! You won $4!")
+  }}
 </script>  
 </body>
 </html>
