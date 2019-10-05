@@ -12,7 +12,7 @@
     <input type="text" placeholder="Input your picks" id="nums"> <br>
     Pick Lucky Number: <br>
     <input type="text" placeholder="Lucky ball" id="luck"> <br>
-    <button type="button" onclick="GetIn()">Draw</button>
+    <button type="button" onclick="GetIn(),Second()">Draw</button>
   </form>
   
   <br>
@@ -54,9 +54,10 @@
     
   }
 
-    for (i = 0; i < nums.length; i++) {
+  function Second() {
+  for (i = 0; i < nums.length; i++) {
       document.write("OOF" + "Number " + (i+1) + "= " + window.InNums + "<br>");
-    }
+    }}
 </script>  
 </body>
 </html>
