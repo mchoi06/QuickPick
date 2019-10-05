@@ -4,28 +4,7 @@
 <meta charset="utf-8">
 </head>
 <body>
-  <script language="javascript">
-// Draw numbers
-    var num1 = 2 //Math.round(Math.random() * 48);
-    var num2 = 18 //Math.round(Math.random() * 48);
-    var num3 = 5 //Math.round(Math.random() * 48); 
-    var num4 = 20 //Math.round(Math.random() * 48); 
-    var num5 = 32 //Math.round(Math.random() * 48);
-    var luck = 6 //Math.round(Math.random() * 18);
-    var nums = [num1, num2, num3, num4, num5];
-    for (i = 0; i < nums.length; i++) {
-      document.write("Number " + (i+1) + "= " + nums[i] + "<br>"); 
-    }
-    document.write("Lucky Ball = " + luck + "<br>");
-    document.write("<br>");
-// Sort and Display
-    nums.sort(function(a, b){return a-b});
-    document.write("Sorted <br>");
-    for (i = 0; i < nums.length; i++) {
-       document.write("Number " + (i+1) + "= " + nums[i] + "<br>");
-    }
-    document.write("Lucky Ball = " + luck + "<br><br>");
-  </script>
+
   
 <!-- Form -->
   <form name="Picks">
@@ -54,6 +33,30 @@
   
   
 </script>
+  
+  <script language="javascript">
+// Draw numbers
+    var num1 = 2 //Math.round(Math.random() * 48);
+    var num2 = 18 //Math.round(Math.random() * 48);
+    var num3 = 5 //Math.round(Math.random() * 48); 
+    var num4 = 20 //Math.round(Math.random() * 48); 
+    var num5 = 32 //Math.round(Math.random() * 48);
+    var luck = 6 //Math.round(Math.random() * 18);
+    var nums = [num1, num2, num3, num4, num5];
+    for (i = 0; i < nums.length; i++) {
+      document.write("Number " + (i+1) + "= " + nums[i] + "<br>"); 
+    }
+    document.write("Lucky Ball = " + luck + "<br>");
+    document.write("<br>");
+// Sort and Display
+    nums.sort(function(a, b){return a-b});
+    document.write("Sorted <br>");
+    for (i = 0; i < nums.length; i++) {
+       document.write("Number " + (i+1) + "= " + nums[i] + "<br>");
+    }
+    document.write("Lucky Ball = " + luck + "<br><br>");
+  </script>
+  
   
 </body>
 </html>
