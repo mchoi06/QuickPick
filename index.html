@@ -49,7 +49,9 @@
     InNums = InNums.split(" ");
     document.write(Array.isArray(InNums));
     document.write(InNums + "<br>");
-    document.write(InNums[0]);
+    for (i = 0; i < nums.length; i++) {
+      document.write("Number " + (i+1) + "= " + nums[i] + "<br>"); 
+    }
     
   }
   
