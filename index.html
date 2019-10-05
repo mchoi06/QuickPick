@@ -75,8 +75,28 @@
   }
   function Calc() {
     if ((window.match == 0) && (window.InLuck == luck)) {
-      document.write("Congratulations! You won $4!")
-    }
+      document.write("Congratulations! You won $4!")} 
+    else if ((window.match == 1) && (window.InLuck == luck)) {
+        document.write("Congratulations! You won $6!")}
+    else if ((window.match == 2) && (window.InLuck != luck)) {
+        document.write("Congratulations! You won $3!")}
+    else if ((window.match == 2) && (window.InLuck == luck)) {
+        document.write("Congratulations! You won $25!")}
+    else if ((window.match == 3) && (window.InLuck != luck)) {
+        document.write("Congratulations! You won $20!")}
+    else if ((window.match == 3) && (window.InLuck == luck)) {
+        document.write("Congratulations! You won $150!")}
+    else if ((window.match == 4) && (window.InLuck != luck)) {
+        document.write("Congratulations! You won $200!")}
+    else if ((window.match == 4) && (window.InLuck == luck)) {
+        document.write("Congratulations! You won $5000!")}
+    else if ((window.match == 5) && (window.InLuck != luck)) {
+        document.write("Congratulations! You won $25,000 a YEAR for LIFE!")}
+    else if ((window.match == 5) && (window.InLuck == luck)) {
+        document.write("Congratulations! You won $7,000 a WEEK for LIFE!!")}
+    else { 
+      document.write("Sorry! Try again next time!")
+    
   }
   
 </script>  
