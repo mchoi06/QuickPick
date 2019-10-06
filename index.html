@@ -9,22 +9,22 @@
 <!-- Form -->
   <form name="Picks">
     Pick 5 Numbers: <br> 
-    <input type="text" placeholder="Input your picks" id="nums"> <br>
+    <input type="text" placeholder="Input your picks (1-48)" id="nums"> <br>
     Pick Lucky Number: <br>
-    <input type="text" placeholder="Lucky ball" id="luck"> <br>
-    <button type="button" onclick="GetIn();Second();Match();Calc();">Draw</button>
+    <input type="text" placeholder="Lucky ball (1-18)" id="luck"> <br>
+    <button type="button" onclick="GetIn();Match();Calc();">Draw</button>
   </form>
   
   <br>
 
 <script language="javascript">
 // Draw numbers
-  var num1 = 2 //Math.round(Math.random() * 48);
-  var num2 = 18 //Math.round(Math.random() * 48);
-  var num3 = 5 //Math.round(Math.random() * 48); 
-  var num4 = 2 //Math.round(Math.random() * 48); 
-  var num5 = 32 //Math.round(Math.random() * 48);
-  var luck = 6 //Math.round(Math.random() * 18);
+  var num1 = Math.round(Math.random() * 48);
+  var num2 = Math.round(Math.random() * 48);
+  var num3 = Math.round(Math.random() * 48); 
+  var num4 = Math.round(Math.random() * 48); 
+  var num5 = Math.round(Math.random() * 48);
+  var luck = Math.round(Math.random() * 18);
   var nums = [num1, num2, num3, num4, num5];
   for (i = 0; i < nums.length; i++) {
     document.write("Number " + (i+1) + "= " + nums[i] + "<br>"); 
@@ -38,9 +38,7 @@
     document.write("Number " + (i+1) + "= " + nums[i] + "<br>");
   }
   document.write("Lucky Ball = " + luck + "<br><br>");
-</script>
   
-<script language="javascript">
   function GetIn() {
     window.InNums = document.getElementById("nums").value;
     window.InLuck = document.getElementById("luck").value;
@@ -53,12 +51,6 @@
     }
     
   }
-
-  function Second() {
-  document.write("<br>")
-  for (i = 0; i < nums.length; i++) {
-      document.write("ACTUAL" + "Number " + (i+1) + "= " + nums[i] + "<br>");
-    }}
   
   function Match() {
     window.match = 0;
