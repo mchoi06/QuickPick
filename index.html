@@ -6,17 +6,6 @@
 <body>
 
   
-<!-- Form -->
-  <form name="Picks">
-    Pick 5 Numbers: <br> 
-    <input type="text" placeholder="Input your picks (1-48)" id="nums"> <br>
-    Pick Lucky Number: <br>
-    <input type="text" placeholder="Lucky ball (1-18)" id="luck"> <br>
-    <button type="button" onclick="GetIn();Match();Calc();">Draw</button>
-  </form>
-  
-  <br>
-
 <script language="javascript">
 // Draw numbers
   var num1 = Math.round(Math.random() * 47 + 1);
@@ -38,7 +27,20 @@
     document.write("Number " + (i+1) + "= " + nums[i] + "<br>");
   }
   document.write("Lucky Ball = " + luck + "<br><br>");
+</script>  
+
+<!-- Form -->
+<form name="Picks">
+  Pick 5 Numbers: <br> 
+  <input type="text" placeholder="Input your picks (1-48)" id="nums"> <br>
+  Pick Lucky Number: <br>
+  <input type="text" placeholder="Lucky ball (1-18)" id="luck"> <br>
+  <button type="button" onclick="GetIn();Match();Calc();">Draw</button>
+</form>
   
+<br>
+
+<script language="javascript">
   function GetIn() {
     window.InNums = document.getElementById("nums").value;
     window.InLuck = document.getElementById("luck").value;
@@ -67,27 +69,27 @@
   }
   function Calc() {
     if ((window.match == 0) && (window.InLuck == luck)) {
-      document.write("Congratulations! You won $4!")} 
+      alert("Congratulations! You won $4!")} 
     else if ((window.match == 1) && (window.InLuck == luck)) {
-        document.write("Congratulations! You won $6!")}
+        alert("Congratulations! You won $6!")}
     else if ((window.match == 2) && (window.InLuck != luck)) {
-        document.write("Congratulations! You won $3!")}
+        alert("Congratulations! You won $3!")}
     else if ((window.match == 2) && (window.InLuck == luck)) {
-        document.write("Congratulations! You won $25!")}
+        alert("Congratulations! You won $25!")}
     else if ((window.match == 3) && (window.InLuck != luck)) {
-        document.write("Congratulations! You won $20!")}
+        alert("Congratulations! You won $20!")}
     else if ((window.match == 3) && (window.InLuck == luck)) {
-        document.write("Congratulations! You won $150!")}
+        alert("Congratulations! You won $150!")}
     else if ((window.match == 4) && (window.InLuck != luck)) {
-        document.write("Congratulations! You won $200!")}
+        alert("Congratulations! You won $200!")}
     else if ((window.match == 4) && (window.InLuck == luck)) {
-        document.write("Congratulations! You won $5000!")}
+        alert("Congratulations! You won $5000!")}
     else if ((window.match == 5) && (window.InLuck != luck)) {
-        document.write("Congratulations! You won $25,000 a YEAR for LIFE!")}
+        alert("Congratulations! You won $25,000 a YEAR for LIFE!")}
     else if ((window.match == 5) && (window.InLuck == luck)) {
-        document.write("Congratulations! You won $7,000 a WEEK for LIFE!!")}
+        alert("Congratulations! You won $7,000 a WEEK for LIFE!!")}
     else { 
-      document.write("Sorry! Try again next time!")}
+      alert("Sorry! Try again next time!")}
     
   }
   
