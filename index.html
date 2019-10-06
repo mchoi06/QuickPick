@@ -65,7 +65,7 @@
     for (i = 0; i < nums.length; i++) {
       for (j = 0; j < window.InNums.length; j++) {
         if (nums[i] == window.InNums[j]) {
-          document.write("match value: " + window.match + " and ACTUAL num is " + nums[i] + " and input num is: " + window.InNums);
+          document.write("match value: " + window.match + " and ACTUAL num is " + nums[i] + " and input num is: " + window.InNums[i]);
           window.match++;
           document.write(" new match is" + window.match + "<br>");
           nums[i] = 0;
