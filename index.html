@@ -19,19 +19,19 @@
   document.write("<table>");
   for (i = 0; i < nums.length; i++) {
     document.write("<tr> <td> Number " + (i+1) + " </td> <td>" + nums[i] + "</td> </tr>");
-//    document.write("Number " + (i+1) + " = " + nums[i] + "<br>"); 
   }
   document.write("<tr> <td> Lucky Ball </td> <td>" + luck + "</td> </tr>");
-  //document.write("Lucky Ball = " + luck + "<br>");
-  document.write("</table> <br>")
+  document.write("</table> <br>");
   document.write("<br>");
 // Sort and Display
   nums.sort(function(a, b){return a-b});
-  document.write("Sorted <br>");
+  document.write("Sorted <br> <table>");
   for (i = 0; i < nums.length; i++) {
-    document.write("Number " + (i+1) + " = " + nums[i] + "<br>");
+    document.write("<tr> <td> Number " + (i+1) + " </td> <td>" + nums[i] + "</td> </tr>");
   }
-  document.write("Lucky Ball = " + luck + "<br><br>");
+  document.write("<tr> <td> Lucky Ball </td> <td>" + luck + "</td> </tr>");
+  document.write("</table> <br>");
+
 </script>  
 
 <!-- Form -->
