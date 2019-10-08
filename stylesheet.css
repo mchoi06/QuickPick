@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Embedded Style Sheet</title>
+<style type="text/css">
+  
+  html {
+    height: 100%;
+  }
+  
+  button {
+    margin-top: 1em;
+    background-color: #66ff33;
+  }
+  
+  table {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #000;
+    width: auto;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+  }
+
+  div {
+    font-weight: bold;
+  }
+
